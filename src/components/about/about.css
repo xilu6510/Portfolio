@@ -1,0 +1,33 @@
+.des {
+  margin-left: 0.875rem;
+}
+
+.letter-container {
+  border: 1px solid var(--border-color);
+  padding: 2.5rem;
+  margin: 3rem 5rem;
+}
+
+.cover-letter {
+  margin-bottom: 1.5rem;
+}
+
+.skill-container {
+  margin: 3rem 5rem 0 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .letter-container {
+    margin: 0;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .skill-container {
+    margin: 1rem;
+  }
+
+  .skill-section-title {
+    margin-top: 3rem;
+  }
+}

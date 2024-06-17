@@ -1,0 +1,45 @@
+.skill-certification {
+  display: flex;
+  column-gap: 10rem;
+}
+
+.skill-list {
+  display: flex;
+}
+
+.skills-title {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.certi-title {
+  font-weight: 600;
+  color: #5e5c7f;
+  text-decoration: underline;
+}
+
+.certi-desc {
+  color: #5e5c7f;
+}
+
+.skill-certification {
+  display: block;
+}
+
+.certification {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-list {
+    display: block;
+  }
+
+  .skill-certification {
+    display: block;
+  }
+
+  .certification {
+    margin-top: 50px;
+  }
+}

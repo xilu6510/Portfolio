@@ -1,0 +1,135 @@
+.work-container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  margin: 3rem 5rem;
+}
+
+.timeline {
+  background-color: #f6f6f6;
+  padding: 1.875rem;
+  border-radius: var(--border-radius);
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: var(--title-color);
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+}
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation {
+  position: absolute;
+  left: -0.4375rem;
+  top: 0;
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  background-color: #f6f6f6;
+  padding: 0.4375rem 0;
+}
+
+.timeline-date {
+  color: #8b88b1;
+  font-size: var(--small-font-size);
+}
+
+.timeline-title {
+  font-size: var(--h3-font-size);
+  margin: 0.5rem 0;
+}
+
+.timeline p {
+  cursor: pointer;
+}
+
+.work-details {
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  height: 80vh;
+  width: 80%;
+  position: fixed;
+  top: 12vh;
+  z-index: 10;
+  padding: 3rem 5rem;
+  display: none;
+}
+
+.work-details h3 {
+  margin-top: 20px;
+}
+
+.work-details ul {
+  margin-left: 20px;
+}
+
+.work-details i {
+  cursor: pointer;
+}
+
+.icon-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.open {
+  display: block;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.open ul li {
+  list-style-type: square;
+}
+
+.click-view {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+  .work-container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work-container {
+    grid-template-columns: 330px;
+    row-gap: 1.875rem;
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .open {
+    display: block;
+    padding: 2rem;
+    overflow-y: scroll;
+    height: 90vh;
+    width: 90%;
+    top: 2vh;
+  }
+
+  .icon-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    position: fixed;
+  }
+}
